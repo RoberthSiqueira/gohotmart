@@ -5,5 +5,6 @@
 
 target 'gohotmart' do
 	pod 'Realm'
+	pod 'AFNetworking', '~> 3.0'
 end
 

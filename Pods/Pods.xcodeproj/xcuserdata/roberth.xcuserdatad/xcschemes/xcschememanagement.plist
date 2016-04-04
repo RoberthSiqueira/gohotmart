@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-gohotmart.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>BB6382BA6A0275040F98F56BFA6F4651</key>
+		<key>928353533005A4198EBDA5B700D37B64</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DC7FD710A08B9F2868EF353A57B25585</key>
+		<key>AE4740F8ABA1773594A11FC363450373</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E6D49B5C8314B221EBCB857168D47059</key>
 		<dict>
 			<key>primary</key>
 			<true/>
