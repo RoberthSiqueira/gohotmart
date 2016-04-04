@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GHMSaleModel.h"
 
-typedef void (^CompleteSyncBlock)(BOOL contextDidSave, NSError *error);
 @interface GHMSaleService : NSObject
-+ (void) syncSale:(CompleteSyncBlock)completeSyncBlock;
++ (void) syncSale;
 @end

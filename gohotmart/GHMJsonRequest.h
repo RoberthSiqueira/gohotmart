@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^CompleteBlock)(NSError *error, id json);
+typedef void (^CompleteBlock)(NSError *error, NSDictionary *json);
 @interface GHMJsonRequest : NSObject
 + (void) request:(NSString *)endpoint complete:(CompleteBlock)completeBlock;
 @end

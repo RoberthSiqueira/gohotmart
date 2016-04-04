@@ -8,15 +8,10 @@
 
 #import "GHMSaleModel.h"
 
-@interface GHMSaleModel ()
-
-@property (strong, nonatomic) NSString *idSale;
-@property (strong, nonatomic) NSString *title;
-@property (strong, nonatomic) NSString *date;
-@property (strong, nonatomic) NSString *price;
-
-@end
-
 @implementation GHMSaleModel
+
++ (NSString *)primaryKey {
+    return @"id";
+}
 
 @end

@@ -8,7 +8,9 @@
 
 #import "GHMCellTableViewCell.h"
 
+@interface GHMCellTableViewCell ()
 
+@end
 
 @implementation GHMCellTableViewCell
 

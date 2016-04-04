@@ -8,8 +8,16 @@
 
 #import "GHMSalesViewController.h"
 #import "GHMCellTableViewCell.h"
+#import "GHMSaleService.h"
+#import "GHMSaleModel.h"
+#import "GHMSaleService.h"
+#import <Realm/Realm.h>
 
 @interface GHMSalesViewController () <UITableViewDataSource, UITableViewDelegate>
+@property (strong, nonatomic) RLMResults<GHMSaleModel *> *sales;
+@property (strong, nonatomic) IBOutlet UITableView *salesTableView;
+@property (strong, nonatomic) RLMNotificationToken *token;
+@property (strong, nonatomic) IBOutlet UIView *loadingView;
 
 @end
 
@@ -17,16 +25,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    [self.loadingView setHidden:NO];
+    
+    [GHMSaleService syncSale];
+    
+    _token = [[GHMSaleModel allObjects] addNotificationBlock:^(RLMResults<GHMSaleModel *> *results, NSError * _Nullable error) {
+        self.sales = results;
+        [self.loadingView setHidden:YES];
+        [self.salesTableView reloadData];
+    }];
+    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 6;
+    return self.sales.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -39,7 +56,18 @@
         [cell setBackgroundColor:[UIColor colorWithRed:244/255.0f green:244/255.0f blue:244/255.0f alpha:1.0f]];
     }
     
+    GHMSaleModel *model = self.sales[indexPath.row];
+    
+    cell.idLabel.text = [NSString stringWithFormat:@"%ld", (long)model.id];
+    cell.titleLabel.text = model.title;
+    cell.dateLabel.text = model.date;
+    cell.priceLabel.text = model.price;
+    
     return cell;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 /*

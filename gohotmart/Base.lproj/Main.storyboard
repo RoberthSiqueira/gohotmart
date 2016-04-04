@@ -161,6 +161,12 @@
                                                 <constraint firstItem="b9E-Uw-Yrf" firstAttribute="top" secondItem="e3R-Ya-lHs" secondAttribute="topMargin" id="wnj-sN-J1m"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="nCV-ab-Hql" id="oxf-JT-fqw"/>
+                                            <outlet property="idLabel" destination="nVQ-hb-ocB" id="3Zp-Va-60w"/>
+                                            <outlet property="priceLabel" destination="MGL-Xy-uvK" id="jfw-DB-muM"/>
+                                            <outlet property="titleLabel" destination="5Kn-oK-APF" id="o30-7e-nQz"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -168,15 +174,32 @@
                                     <outlet property="delegate" destination="YFe-7q-vnp" id="1B8-c4-bHV"/>
                                 </connections>
                             </tableView>
+                            <view hidden="YES" alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7sy-0O-BhX" userLabel="Load View">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="WgW-fQ-Lxl">
+                                        <rect key="frame" x="142" y="273" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="WgW-fQ-Lxl" firstAttribute="centerY" secondItem="7sy-0O-BhX" secondAttribute="centerY" constant="7.5" id="YEt-7q-bYb"/>
+                                    <constraint firstItem="WgW-fQ-Lxl" firstAttribute="centerX" secondItem="7sy-0O-BhX" secondAttribute="centerX" id="erA-5i-RX1"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="7sy-0O-BhX" firstAttribute="leading" secondItem="al3-gq-xNv" secondAttribute="leading" id="92Z-RF-UQj"/>
                             <constraint firstItem="plg-CR-7eq" firstAttribute="top" secondItem="al3-gq-xNv" secondAttribute="top" id="B1e-we-Cj9"/>
                             <constraint firstItem="plg-CR-7eq" firstAttribute="leading" secondItem="al3-gq-xNv" secondAttribute="leading" id="BBw-ql-5sA"/>
+                            <constraint firstItem="JP7-m9-Qdp" firstAttribute="top" secondItem="7sy-0O-BhX" secondAttribute="bottom" constant="-49" id="J1b-6r-KYZ"/>
                             <constraint firstItem="i0j-c8-fLK" firstAttribute="leading" secondItem="al3-gq-xNv" secondAttribute="leading" id="Jdk-L9-80A"/>
                             <constraint firstAttribute="trailing" secondItem="plg-CR-7eq" secondAttribute="trailing" id="NKO-bx-fR6"/>
                             <constraint firstItem="i0j-c8-fLK" firstAttribute="top" secondItem="plg-CR-7eq" secondAttribute="bottom" id="fSY-aw-IsB"/>
                             <constraint firstAttribute="trailing" secondItem="i0j-c8-fLK" secondAttribute="trailing" id="hHb-Kv-bPe"/>
+                            <constraint firstAttribute="trailing" secondItem="7sy-0O-BhX" secondAttribute="trailing" id="s7b-Ql-9O8"/>
+                            <constraint firstItem="7sy-0O-BhX" firstAttribute="top" secondItem="plg-CR-7eq" secondAttribute="bottom" constant="-65" id="ybe-mu-dYI"/>
                             <constraint firstItem="JP7-m9-Qdp" firstAttribute="top" secondItem="i0j-c8-fLK" secondAttribute="bottom" id="zPQ-Zn-0b3"/>
                         </constraints>
                     </view>
@@ -189,6 +212,10 @@
                     </tabBarItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="loadingView" destination="7sy-0O-BhX" id="crO-bk-Ad5"/>
+                        <outlet property="salesTableView" destination="i0j-c8-fLK" id="XNK-no-hmO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xax-Jf-pur" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

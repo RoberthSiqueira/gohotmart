@@ -9,7 +9,12 @@
 #import <Realm/Realm.h>
 #import <Foundation/Foundation.h>
 
-
 @interface GHMSaleModel : RLMObject
 
+@property NSInteger id;
+@property NSString *title;
+@property NSString *date;
+@property NSString *price;
+
++ (NSString *)primaryKey;
 @end

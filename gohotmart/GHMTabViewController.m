@@ -27,7 +27,6 @@
     [self setupDivLines];
 }
 
-
 -(void)setupTabBar {
     for(UITabBarItem * tabBarItem in self.tabBar.items){
         tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
