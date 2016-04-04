@@ -8,8 +8,15 @@
 
 #import "GHMTabBar.h"
 
-#define SIZE_OF_TABBAR 70
+#define SIZE_OF_TABBAR 60
 
 @implementation GHMTabBar
+
+-(CGSize)sizeThatFits:(CGSize)size {
+    CGSize sizeThatFits = [super sizeThatFits:size];
+    sizeThatFits.height = SIZE_OF_TABBAR;
+    
+    return sizeThatFits;
+}
 
 @end

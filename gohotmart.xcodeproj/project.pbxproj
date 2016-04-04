@@ -12,6 +12,8 @@
 		2077A3FB1CB2B4DC001B45F0 /* GHMSaleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A3FA1CB2B4DC001B45F0 /* GHMSaleModel.m */; };
 		2077A3FE1CB2BFA4001B45F0 /* GHMSaleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A3FD1CB2BFA4001B45F0 /* GHMSaleService.m */; };
 		2077A4021CB2C964001B45F0 /* GHMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A4011CB2C964001B45F0 /* GHMTabBar.m */; };
+		2077A4061CB2E569001B45F0 /* GHMCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A4051CB2E569001B45F0 /* GHMCellTableViewCell.m */; };
+		2077A4091CB2E6B7001B45F0 /* GHMSalesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A4081CB2E6B7001B45F0 /* GHMSalesViewController.m */; };
 		20F5E7741CB235E000DC6F63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5E7731CB235E000DC6F63 /* main.m */; };
 		20F5E7771CB235E000DC6F63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5E7761CB235E000DC6F63 /* AppDelegate.m */; };
 		20F5E77D1CB235E000DC6F63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F5E77B1CB235E000DC6F63 /* Main.storyboard */; };
@@ -29,6 +31,10 @@
 		2077A3FD1CB2BFA4001B45F0 /* GHMSaleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMSaleService.m; sourceTree = "<group>"; };
 		2077A4001CB2C964001B45F0 /* GHMTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMTabBar.h; sourceTree = "<group>"; };
 		2077A4011CB2C964001B45F0 /* GHMTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMTabBar.m; sourceTree = "<group>"; };
+		2077A4041CB2E569001B45F0 /* GHMCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMCellTableViewCell.h; sourceTree = "<group>"; };
+		2077A4051CB2E569001B45F0 /* GHMCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMCellTableViewCell.m; sourceTree = "<group>"; };
+		2077A4071CB2E6B7001B45F0 /* GHMSalesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMSalesViewController.h; sourceTree = "<group>"; };
+		2077A4081CB2E6B7001B45F0 /* GHMSalesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMSalesViewController.m; sourceTree = "<group>"; };
 		20F5E76F1CB235E000DC6F63 /* gohotmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gohotmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F5E7731CB235E000DC6F63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20F5E7751CB235E000DC6F63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				2077A4031CB2CE52001B45F0 /* element */,
-				20F5E78E1CB240C600DC6F63 /* GHMTabViewController.h */,
-				20F5E78F1CB240C600DC6F63 /* GHMTabViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -82,6 +86,8 @@
 			children = (
 				2077A4001CB2C964001B45F0 /* GHMTabBar.h */,
 				2077A4011CB2C964001B45F0 /* GHMTabBar.m */,
+				2077A4041CB2E569001B45F0 /* GHMCellTableViewCell.h */,
+				2077A4051CB2E569001B45F0 /* GHMCellTableViewCell.m */,
 			);
 			name = element;
 			sourceTree = "<group>";
@@ -134,6 +140,10 @@
 		20F5E78B1CB2406200DC6F63 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				20F5E78E1CB240C600DC6F63 /* GHMTabViewController.h */,
+				20F5E78F1CB240C600DC6F63 /* GHMTabViewController.m */,
+				2077A4071CB2E6B7001B45F0 /* GHMSalesViewController.h */,
+				2077A4081CB2E6B7001B45F0 /* GHMSalesViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -294,6 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2077A4091CB2E6B7001B45F0 /* GHMSalesViewController.m in Sources */,
+				2077A4061CB2E569001B45F0 /* GHMCellTableViewCell.m in Sources */,
 				20F5E7901CB240C600DC6F63 /* GHMTabViewController.m in Sources */,
 				20F5E7771CB235E000DC6F63 /* AppDelegate.m in Sources */,
 				2077A3FB1CB2B4DC001B45F0 /* GHMSaleModel.m in Sources */,
@@ -413,6 +425,7 @@
 			baseConfigurationReference = B51A688D0B7A5296B91383ED /* Pods-gohotmart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = gohotmart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -426,6 +439,7 @@
 			baseConfigurationReference = 66CD0DC1E492146B7653396D /* Pods-gohotmart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = gohotmart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
