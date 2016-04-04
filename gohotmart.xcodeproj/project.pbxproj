@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1F55CD94EECAB1A4A80DA6F7 /* libPods-gohotmart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9309D09711F6DEDEC5726D00 /* libPods-gohotmart.a */; };
 		207252FB1CB2AF8B00FA8685 /* GHMJsonRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 207252FA1CB2AF8B00FA8685 /* GHMJsonRequest.m */; };
+		2077A3FB1CB2B4DC001B45F0 /* GHMSaleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A3FA1CB2B4DC001B45F0 /* GHMSaleModel.m */; };
+		2077A3FE1CB2BFA4001B45F0 /* GHMSaleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A3FD1CB2BFA4001B45F0 /* GHMSaleService.m */; };
 		20F5E7741CB235E000DC6F63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5E7731CB235E000DC6F63 /* main.m */; };
 		20F5E7771CB235E000DC6F63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5E7761CB235E000DC6F63 /* AppDelegate.m */; };
 		20F5E77D1CB235E000DC6F63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F5E77B1CB235E000DC6F63 /* Main.storyboard */; };
@@ -20,6 +22,10 @@
 /* Begin PBXFileReference section */
 		207252F91CB2AF8B00FA8685 /* GHMJsonRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMJsonRequest.h; sourceTree = "<group>"; };
 		207252FA1CB2AF8B00FA8685 /* GHMJsonRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMJsonRequest.m; sourceTree = "<group>"; };
+		2077A3F91CB2B4DC001B45F0 /* GHMSaleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMSaleModel.h; sourceTree = "<group>"; };
+		2077A3FA1CB2B4DC001B45F0 /* GHMSaleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMSaleModel.m; sourceTree = "<group>"; };
+		2077A3FC1CB2BFA4001B45F0 /* GHMSaleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMSaleService.h; sourceTree = "<group>"; };
+		2077A3FD1CB2BFA4001B45F0 /* GHMSaleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMSaleService.m; sourceTree = "<group>"; };
 		20F5E76F1CB235E000DC6F63 /* gohotmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gohotmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F5E7731CB235E000DC6F63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20F5E7751CB235E000DC6F63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,6 +58,8 @@
 			children = (
 				207252F91CB2AF8B00FA8685 /* GHMJsonRequest.h */,
 				207252FA1CB2AF8B00FA8685 /* GHMJsonRequest.m */,
+				2077A3FC1CB2BFA4001B45F0 /* GHMSaleService.h */,
+				2077A3FD1CB2BFA4001B45F0 /* GHMSaleService.m */,
 			);
 			name = service;
 			sourceTree = "<group>";
@@ -119,6 +127,8 @@
 		20F5E78D1CB2406F00DC6F63 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				2077A3F91CB2B4DC001B45F0 /* GHMSaleModel.h */,
+				2077A3FA1CB2B4DC001B45F0 /* GHMSaleModel.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -265,6 +275,8 @@
 			files = (
 				20F5E7901CB240C600DC6F63 /* GHMTabViewController.m in Sources */,
 				20F5E7771CB235E000DC6F63 /* AppDelegate.m in Sources */,
+				2077A3FB1CB2B4DC001B45F0 /* GHMSaleModel.m in Sources */,
+				2077A3FE1CB2BFA4001B45F0 /* GHMSaleService.m in Sources */,
 				207252FB1CB2AF8B00FA8685 /* GHMJsonRequest.m in Sources */,
 				20F5E7741CB235E000DC6F63 /* main.m in Sources */,
 			);

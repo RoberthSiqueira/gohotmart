@@ -10,5 +10,5 @@
 
 typedef void (^CompleteBlock)(NSError *error, id json);
 @interface GHMJsonRequest : NSObject
-+ (void) request:(NSString *)url complete:(CompleteBlock)completeBlock;
++ (void) request:(NSString *)endpoint complete:(CompleteBlock)completeBlock;
 @end
