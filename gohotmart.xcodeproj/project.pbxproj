@@ -11,6 +11,7 @@
 		207252FB1CB2AF8B00FA8685 /* GHMJsonRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 207252FA1CB2AF8B00FA8685 /* GHMJsonRequest.m */; };
 		2077A3FB1CB2B4DC001B45F0 /* GHMSaleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A3FA1CB2B4DC001B45F0 /* GHMSaleModel.m */; };
 		2077A3FE1CB2BFA4001B45F0 /* GHMSaleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A3FD1CB2BFA4001B45F0 /* GHMSaleService.m */; };
+		2077A4021CB2C964001B45F0 /* GHMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A4011CB2C964001B45F0 /* GHMTabBar.m */; };
 		20F5E7741CB235E000DC6F63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5E7731CB235E000DC6F63 /* main.m */; };
 		20F5E7771CB235E000DC6F63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5E7761CB235E000DC6F63 /* AppDelegate.m */; };
 		20F5E77D1CB235E000DC6F63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F5E77B1CB235E000DC6F63 /* Main.storyboard */; };
@@ -26,6 +27,8 @@
 		2077A3FA1CB2B4DC001B45F0 /* GHMSaleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMSaleModel.m; sourceTree = "<group>"; };
 		2077A3FC1CB2BFA4001B45F0 /* GHMSaleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMSaleService.h; sourceTree = "<group>"; };
 		2077A3FD1CB2BFA4001B45F0 /* GHMSaleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMSaleService.m; sourceTree = "<group>"; };
+		2077A4001CB2C964001B45F0 /* GHMTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMTabBar.h; sourceTree = "<group>"; };
+		2077A4011CB2C964001B45F0 /* GHMTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMTabBar.m; sourceTree = "<group>"; };
 		20F5E76F1CB235E000DC6F63 /* gohotmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gohotmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F5E7731CB235E000DC6F63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20F5E7751CB235E000DC6F63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +67,25 @@
 			name = service;
 			sourceTree = "<group>";
 		};
+		2077A3FF1CB2C8ED001B45F0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2077A4031CB2CE52001B45F0 /* element */,
+				20F5E78E1CB240C600DC6F63 /* GHMTabViewController.h */,
+				20F5E78F1CB240C600DC6F63 /* GHMTabViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		2077A4031CB2CE52001B45F0 /* element */ = {
+			isa = PBXGroup;
+			children = (
+				2077A4001CB2C964001B45F0 /* GHMTabBar.h */,
+				2077A4011CB2C964001B45F0 /* GHMTabBar.m */,
+			);
+			name = element;
+			sourceTree = "<group>";
+		};
 		20F5E7661CB235E000DC6F63 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +111,7 @@
 				20F5E78D1CB2406F00DC6F63 /* model */,
 				20F5E78C1CB2406A00DC6F63 /* view */,
 				20F5E78B1CB2406200DC6F63 /* controller */,
+				2077A3FF1CB2C8ED001B45F0 /* UI */,
 				20F5E7751CB235E000DC6F63 /* AppDelegate.h */,
 				20F5E7761CB235E000DC6F63 /* AppDelegate.m */,
 				20F5E77B1CB235E000DC6F63 /* Main.storyboard */,
@@ -111,8 +134,6 @@
 		20F5E78B1CB2406200DC6F63 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				20F5E78E1CB240C600DC6F63 /* GHMTabViewController.h */,
-				20F5E78F1CB240C600DC6F63 /* GHMTabViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -276,6 +297,7 @@
 				20F5E7901CB240C600DC6F63 /* GHMTabViewController.m in Sources */,
 				20F5E7771CB235E000DC6F63 /* AppDelegate.m in Sources */,
 				2077A3FB1CB2B4DC001B45F0 /* GHMSaleModel.m in Sources */,
+				2077A4021CB2C964001B45F0 /* GHMTabBar.m in Sources */,
 				2077A3FE1CB2BFA4001B45F0 /* GHMSaleService.m in Sources */,
 				207252FB1CB2AF8B00FA8685 /* GHMJsonRequest.m in Sources */,
 				20F5E7741CB235E000DC6F63 /* main.m in Sources */,
