@@ -9,6 +9,7 @@
         <mutableArray key="fontawesome-webfont.ttf">
             <string>FontAwesome</string>
             <string>FontAwesome</string>
+            <string>FontAwesome</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -177,7 +178,39 @@
                     <view key="view" contentMode="scaleToFill" id="kde-WQ-QE2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOj-8y-wlJ" userLabel="Top Bar View">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mx3-2e-XrJ">
+                                        <rect key="frame" x="20" y="30" width="17" height="20"/>
+                                        <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="19"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dashboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycO-5r-sc4">
+                                        <rect key="frame" x="115" y="30" width="90" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81568627450980391" green="0.30980392156862746" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="0Ms-C8-gtL"/>
+                                    <constraint firstItem="mx3-2e-XrJ" firstAttribute="top" secondItem="lOj-8y-wlJ" secondAttribute="top" constant="30" id="KPh-rP-now"/>
+                                    <constraint firstItem="mx3-2e-XrJ" firstAttribute="leading" secondItem="lOj-8y-wlJ" secondAttribute="leading" constant="20" id="bux-Pp-M3u"/>
+                                    <constraint firstItem="ycO-5r-sc4" firstAttribute="centerX" secondItem="lOj-8y-wlJ" secondAttribute="centerX" id="ew8-VD-8Yg"/>
+                                    <constraint firstItem="ycO-5r-sc4" firstAttribute="top" secondItem="lOj-8y-wlJ" secondAttribute="top" constant="30" id="g73-Sx-tcg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lOj-8y-wlJ" secondAttribute="trailing" id="4Vd-2b-s1S"/>
+                            <constraint firstItem="lOj-8y-wlJ" firstAttribute="leading" secondItem="kde-WQ-QE2" secondAttribute="leading" id="Vbp-XA-zBW"/>
+                            <constraint firstItem="lOj-8y-wlJ" firstAttribute="top" secondItem="kde-WQ-QE2" secondAttribute="top" id="b7Q-iF-td1"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="ico_notificacoes" id="Gj2-Z7-Pzn">
                         <userDefinedRuntimeAttributes>
@@ -186,6 +219,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5jN-un-DdW" userLabel="First Responder" sceneMemberID="firstResponder"/>

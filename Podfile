@@ -7,5 +7,6 @@ target 'gohotmart' do
 	pod 'Realm'
 	pod 'AFNetworking', '~> 3.0'
 	pod 'SDWebImage', '~>3.7'
+	pod 'AMSlideMenu', '~> 1.5.4'
 end
 

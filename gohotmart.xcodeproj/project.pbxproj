@@ -151,7 +151,6 @@
 			children = (
 				207252F81CB2AF3700FA8685 /* service */,
 				20F5E78D1CB2406F00DC6F63 /* model */,
-				20F5E78C1CB2406A00DC6F63 /* view */,
 				20F5E78B1CB2406200DC6F63 /* controller */,
 				2077A3FF1CB2C8ED001B45F0 /* UI */,
 				20F5E7751CB235E000DC6F63 /* AppDelegate.h */,
@@ -184,13 +183,6 @@
 				206174341CB3833200F6D23F /* GHMMessagesViewController.m */,
 			);
 			name = controller;
-			sourceTree = "<group>";
-		};
-		20F5E78C1CB2406A00DC6F63 /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = view;
 			sourceTree = "<group>";
 		};
 		20F5E78D1CB2406F00DC6F63 /* model */ = {

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '85D59855B374CE0644B7D4DD'
+               BlueprintIdentifier = 'AF97B727B3213D3C6C8CE7E2'
                BlueprintName = 'Pods-gohotmart'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-gohotmart.a'>

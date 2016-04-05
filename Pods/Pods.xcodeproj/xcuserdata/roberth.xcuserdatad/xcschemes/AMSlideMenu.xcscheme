@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '87AF55E3997A3235438D3EE7'
-               BlueprintName = 'SDWebImage'
+               BlueprintIdentifier = '873DB9ED886AA3DA3F91084F'
+               BlueprintName = 'AMSlideMenu'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libSDWebImage.a'>
+               BuildableName = 'libAMSlideMenu.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

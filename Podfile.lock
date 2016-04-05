@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - AMSlideMenu (1.5.4)
   - Realm (0.98.6):
     - Realm/Headers (= 0.98.6)
   - Realm/Headers (0.98.6)
@@ -23,11 +24,13 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - AMSlideMenu (~> 1.5.4)
   - Realm
   - SDWebImage (~> 3.7)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AMSlideMenu: 8571937703d2b8e187b22c1416be4cafc3532a11
   Realm: 44803f35418c5d89b27825a564247fcd190de37e
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
 
