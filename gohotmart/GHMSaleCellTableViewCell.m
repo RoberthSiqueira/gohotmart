@@ -6,13 +6,13 @@
 //  Copyright © 2016 Roberth. All rights reserved.
 //
 
-#import "GHMCellTableViewCell.h"
+#import "GHMSaleCellTableViewCell.h"
 
-@interface GHMCellTableViewCell ()
+@interface GHMSaleCellTableViewCell ()
 
 @end
 
-@implementation GHMCellTableViewCell
+@implementation GHMSaleCellTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

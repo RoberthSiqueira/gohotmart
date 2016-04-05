@@ -14,6 +14,7 @@
 @property NSInteger id;
 @property NSString *name;
 @property NSString *photo;
+@property NSString *empityPhoto;
 
 + (NSString *)primaryKey;
 

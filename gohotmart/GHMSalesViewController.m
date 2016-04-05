@@ -7,7 +7,7 @@
 //
 
 #import "GHMSalesViewController.h"
-#import "GHMCellTableViewCell.h"
+#import "GHMSaleCellTableViewCell.h"
 #import "GHMSaleService.h"
 #import "GHMSaleModel.h"
 #import "GHMSaleService.h"
@@ -48,7 +48,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    GHMCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SaleCell"];
+    GHMSaleCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SaleCell"];
     
     if (indexPath.row % 2 == 0) {
         [cell setBackgroundColor:[UIColor whiteColor]];

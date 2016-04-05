@@ -8,11 +8,12 @@
 
 #import "GHMMessageService.h"
 #import "GHMJsonRequest.h"
+#import <Realm/Realm.h>
 
 @implementation GHMMessageService
 
 + (void)syncMessage {
-    [GHMJsonRequest request:@"http://www.mocky.io/v2/57034246270000471506af06" complete:^(NSError *error, NSDictionary *json) {
+    [GHMJsonRequest request:@"http://www.mocky.io/v2/5703ceaa2700006b2506b006" complete:^(NSError *error, NSDictionary *json) {
         NSArray *arrayMessage = [json objectForKey:@"data"];
         RLMRealm *realm = [RLMRealm defaultRealm];
         [realm transactionWithBlock:^{

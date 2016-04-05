@@ -8,14 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		1F55CD94EECAB1A4A80DA6F7 /* libPods-gohotmart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9309D09711F6DEDEC5726D00 /* libPods-gohotmart.a */; };
+		202217CA1CB411B100AB4E9C /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 202217C91CB4116300AB4E9C /* fontawesome-webfont.ttf */; };
 		206174241CB3719600F6D23F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 206174231CB3719600F6D23F /* Images.xcassets */; };
 		206174291CB378FD00F6D23F /* GHMMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 206174281CB378FD00F6D23F /* GHMMessageModel.m */; };
 		2061742C1CB379EE00F6D23F /* GHMMessageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2061742B1CB379EE00F6D23F /* GHMMessageService.m */; };
+		2061742F1CB3817600F6D23F /* GHMMessageCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2061742E1CB3817600F6D23F /* GHMMessageCellCollectionViewCell.m */; };
+		206174351CB3833200F6D23F /* GHMMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206174341CB3833200F6D23F /* GHMMessagesViewController.m */; };
 		207252FB1CB2AF8B00FA8685 /* GHMJsonRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 207252FA1CB2AF8B00FA8685 /* GHMJsonRequest.m */; };
 		2077A3FB1CB2B4DC001B45F0 /* GHMSaleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A3FA1CB2B4DC001B45F0 /* GHMSaleModel.m */; };
 		2077A3FE1CB2BFA4001B45F0 /* GHMSaleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A3FD1CB2BFA4001B45F0 /* GHMSaleService.m */; };
 		2077A4021CB2C964001B45F0 /* GHMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A4011CB2C964001B45F0 /* GHMTabBar.m */; };
-		2077A4061CB2E569001B45F0 /* GHMCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A4051CB2E569001B45F0 /* GHMCellTableViewCell.m */; };
+		2077A4061CB2E569001B45F0 /* GHMSaleCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A4051CB2E569001B45F0 /* GHMSaleCellTableViewCell.m */; };
 		2077A4091CB2E6B7001B45F0 /* GHMSalesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A4081CB2E6B7001B45F0 /* GHMSalesViewController.m */; };
 		20F5E7741CB235E000DC6F63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5E7731CB235E000DC6F63 /* main.m */; };
 		20F5E7771CB235E000DC6F63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5E7761CB235E000DC6F63 /* AppDelegate.m */; };
@@ -25,11 +28,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		206174231CB3719600F6D23F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		202217C91CB4116300AB4E9C /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		206174231CB3719600F6D23F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = gohotmart/Images.xcassets; sourceTree = "<group>"; };
 		206174271CB378FD00F6D23F /* GHMMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMMessageModel.h; sourceTree = "<group>"; };
 		206174281CB378FD00F6D23F /* GHMMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMMessageModel.m; sourceTree = "<group>"; };
 		2061742A1CB379EE00F6D23F /* GHMMessageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMMessageService.h; sourceTree = "<group>"; };
 		2061742B1CB379EE00F6D23F /* GHMMessageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMMessageService.m; sourceTree = "<group>"; };
+		2061742D1CB3817600F6D23F /* GHMMessageCellCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMMessageCellCollectionViewCell.h; sourceTree = "<group>"; };
+		2061742E1CB3817600F6D23F /* GHMMessageCellCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMMessageCellCollectionViewCell.m; sourceTree = "<group>"; };
+		206174331CB3833200F6D23F /* GHMMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMMessagesViewController.h; sourceTree = "<group>"; };
+		206174341CB3833200F6D23F /* GHMMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMMessagesViewController.m; sourceTree = "<group>"; };
 		207252F91CB2AF8B00FA8685 /* GHMJsonRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMJsonRequest.h; sourceTree = "<group>"; };
 		207252FA1CB2AF8B00FA8685 /* GHMJsonRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMJsonRequest.m; sourceTree = "<group>"; };
 		2077A3F91CB2B4DC001B45F0 /* GHMSaleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMSaleModel.h; sourceTree = "<group>"; };
@@ -38,8 +46,8 @@
 		2077A3FD1CB2BFA4001B45F0 /* GHMSaleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMSaleService.m; sourceTree = "<group>"; };
 		2077A4001CB2C964001B45F0 /* GHMTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMTabBar.h; sourceTree = "<group>"; };
 		2077A4011CB2C964001B45F0 /* GHMTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMTabBar.m; sourceTree = "<group>"; };
-		2077A4041CB2E569001B45F0 /* GHMCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMCellTableViewCell.h; sourceTree = "<group>"; };
-		2077A4051CB2E569001B45F0 /* GHMCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMCellTableViewCell.m; sourceTree = "<group>"; };
+		2077A4041CB2E569001B45F0 /* GHMSaleCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMSaleCellTableViewCell.h; sourceTree = "<group>"; };
+		2077A4051CB2E569001B45F0 /* GHMSaleCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMSaleCellTableViewCell.m; sourceTree = "<group>"; };
 		2077A4071CB2E6B7001B45F0 /* GHMSalesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMSalesViewController.h; sourceTree = "<group>"; };
 		2077A4081CB2E6B7001B45F0 /* GHMSalesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMSalesViewController.m; sourceTree = "<group>"; };
 		20F5E76F1CB235E000DC6F63 /* gohotmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gohotmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +76,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		202217C61CB40F4A00AB4E9C /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				202217C71CB4113D00AB4E9C /* assets */,
+			);
+			name = resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		202217C71CB4113D00AB4E9C /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				206174231CB3719600F6D23F /* Images.xcassets */,
+				202217C91CB4116300AB4E9C /* fontawesome-webfont.ttf */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
 		207252F81CB2AF3700FA8685 /* service */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +120,10 @@
 			children = (
 				2077A4001CB2C964001B45F0 /* GHMTabBar.h */,
 				2077A4011CB2C964001B45F0 /* GHMTabBar.m */,
-				2077A4041CB2E569001B45F0 /* GHMCellTableViewCell.h */,
-				2077A4051CB2E569001B45F0 /* GHMCellTableViewCell.m */,
+				2077A4041CB2E569001B45F0 /* GHMSaleCellTableViewCell.h */,
+				2077A4051CB2E569001B45F0 /* GHMSaleCellTableViewCell.m */,
+				2061742D1CB3817600F6D23F /* GHMMessageCellCollectionViewCell.h */,
+				2061742E1CB3817600F6D23F /* GHMMessageCellCollectionViewCell.m */,
 			);
 			name = element;
 			sourceTree = "<group>";
@@ -130,8 +158,8 @@
 				20F5E7761CB235E000DC6F63 /* AppDelegate.m */,
 				20F5E77B1CB235E000DC6F63 /* Main.storyboard */,
 				20F5E7801CB235E000DC6F63 /* LaunchScreen.storyboard */,
-				206174231CB3719600F6D23F /* Images.xcassets */,
 				20F5E7831CB235E000DC6F63 /* Info.plist */,
+				202217C61CB40F4A00AB4E9C /* resources */,
 				20F5E7721CB235E000DC6F63 /* Supporting Files */,
 			);
 			path = gohotmart;
@@ -152,6 +180,8 @@
 				20F5E78F1CB240C600DC6F63 /* GHMTabViewController.m */,
 				2077A4071CB2E6B7001B45F0 /* GHMSalesViewController.h */,
 				2077A4081CB2E6B7001B45F0 /* GHMSalesViewController.m */,
+				206174331CB3833200F6D23F /* GHMMessagesViewController.h */,
+				206174341CB3833200F6D23F /* GHMMessagesViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -253,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				202217CA1CB411B100AB4E9C /* fontawesome-webfont.ttf in Resources */,
 				206174241CB3719600F6D23F /* Images.xcassets in Resources */,
 				20F5E7821CB235E000DC6F63 /* LaunchScreen.storyboard in Resources */,
 				20F5E77D1CB235E000DC6F63 /* Main.storyboard in Resources */,
@@ -315,14 +346,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2077A4091CB2E6B7001B45F0 /* GHMSalesViewController.m in Sources */,
-				2077A4061CB2E569001B45F0 /* GHMCellTableViewCell.m in Sources */,
+				2077A4061CB2E569001B45F0 /* GHMSaleCellTableViewCell.m in Sources */,
 				206174291CB378FD00F6D23F /* GHMMessageModel.m in Sources */,
 				20F5E7901CB240C600DC6F63 /* GHMTabViewController.m in Sources */,
 				2061742C1CB379EE00F6D23F /* GHMMessageService.m in Sources */,
+				206174351CB3833200F6D23F /* GHMMessagesViewController.m in Sources */,
 				20F5E7771CB235E000DC6F63 /* AppDelegate.m in Sources */,
 				2077A3FB1CB2B4DC001B45F0 /* GHMSaleModel.m in Sources */,
 				2077A4021CB2C964001B45F0 /* GHMTabBar.m in Sources */,
 				2077A3FE1CB2BFA4001B45F0 /* GHMSaleService.m in Sources */,
+				2061742F1CB3817600F6D23F /* GHMMessageCellCollectionViewCell.m in Sources */,
 				207252FB1CB2AF8B00FA8685 /* GHMJsonRequest.m in Sources */,
 				20F5E7741CB235E000DC6F63 /* main.m in Sources */,
 			);

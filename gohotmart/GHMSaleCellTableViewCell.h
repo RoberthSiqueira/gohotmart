@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GHMCellTableViewCell : UITableViewCell
+@interface GHMSaleCellTableViewCell : UITableViewCell
 
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *idLabel;
