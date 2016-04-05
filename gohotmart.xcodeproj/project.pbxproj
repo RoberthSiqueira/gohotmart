@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1F55CD94EECAB1A4A80DA6F7 /* libPods-gohotmart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9309D09711F6DEDEC5726D00 /* libPods-gohotmart.a */; };
+		206174241CB3719600F6D23F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 206174231CB3719600F6D23F /* Images.xcassets */; };
+		206174291CB378FD00F6D23F /* GHMMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 206174281CB378FD00F6D23F /* GHMMessageModel.m */; };
+		2061742C1CB379EE00F6D23F /* GHMMessageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2061742B1CB379EE00F6D23F /* GHMMessageService.m */; };
 		207252FB1CB2AF8B00FA8685 /* GHMJsonRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 207252FA1CB2AF8B00FA8685 /* GHMJsonRequest.m */; };
 		2077A3FB1CB2B4DC001B45F0 /* GHMSaleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A3FA1CB2B4DC001B45F0 /* GHMSaleModel.m */; };
 		2077A3FE1CB2BFA4001B45F0 /* GHMSaleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A3FD1CB2BFA4001B45F0 /* GHMSaleService.m */; };
@@ -18,11 +21,15 @@
 		20F5E7771CB235E000DC6F63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5E7761CB235E000DC6F63 /* AppDelegate.m */; };
 		20F5E77D1CB235E000DC6F63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F5E77B1CB235E000DC6F63 /* Main.storyboard */; };
 		20F5E7821CB235E000DC6F63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F5E7801CB235E000DC6F63 /* LaunchScreen.storyboard */; };
-		20F5E78A1CB2361700DC6F63 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F5E7891CB2361700DC6F63 /* Images.xcassets */; };
 		20F5E7901CB240C600DC6F63 /* GHMTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5E78F1CB240C600DC6F63 /* GHMTabViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		206174231CB3719600F6D23F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		206174271CB378FD00F6D23F /* GHMMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMMessageModel.h; sourceTree = "<group>"; };
+		206174281CB378FD00F6D23F /* GHMMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMMessageModel.m; sourceTree = "<group>"; };
+		2061742A1CB379EE00F6D23F /* GHMMessageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMMessageService.h; sourceTree = "<group>"; };
+		2061742B1CB379EE00F6D23F /* GHMMessageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMMessageService.m; sourceTree = "<group>"; };
 		207252F91CB2AF8B00FA8685 /* GHMJsonRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMJsonRequest.h; sourceTree = "<group>"; };
 		207252FA1CB2AF8B00FA8685 /* GHMJsonRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMJsonRequest.m; sourceTree = "<group>"; };
 		2077A3F91CB2B4DC001B45F0 /* GHMSaleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMSaleModel.h; sourceTree = "<group>"; };
@@ -42,7 +49,6 @@
 		20F5E77C1CB235E000DC6F63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20F5E7811CB235E000DC6F63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20F5E7831CB235E000DC6F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20F5E7891CB2361700DC6F63 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		20F5E78E1CB240C600DC6F63 /* GHMTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMTabViewController.h; sourceTree = "<group>"; };
 		20F5E78F1CB240C600DC6F63 /* GHMTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMTabViewController.m; sourceTree = "<group>"; };
 		66CD0DC1E492146B7653396D /* Pods-gohotmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gohotmart.release.xcconfig"; path = "Pods/Target Support Files/Pods-gohotmart/Pods-gohotmart.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +75,8 @@
 				207252FA1CB2AF8B00FA8685 /* GHMJsonRequest.m */,
 				2077A3FC1CB2BFA4001B45F0 /* GHMSaleService.h */,
 				2077A3FD1CB2BFA4001B45F0 /* GHMSaleService.m */,
+				2061742A1CB379EE00F6D23F /* GHMMessageService.h */,
+				2061742B1CB379EE00F6D23F /* GHMMessageService.m */,
 			);
 			name = service;
 			sourceTree = "<group>";
@@ -121,8 +129,8 @@
 				20F5E7751CB235E000DC6F63 /* AppDelegate.h */,
 				20F5E7761CB235E000DC6F63 /* AppDelegate.m */,
 				20F5E77B1CB235E000DC6F63 /* Main.storyboard */,
-				20F5E7891CB2361700DC6F63 /* Images.xcassets */,
 				20F5E7801CB235E000DC6F63 /* LaunchScreen.storyboard */,
+				206174231CB3719600F6D23F /* Images.xcassets */,
 				20F5E7831CB235E000DC6F63 /* Info.plist */,
 				20F5E7721CB235E000DC6F63 /* Supporting Files */,
 			);
@@ -160,6 +168,8 @@
 			children = (
 				2077A3F91CB2B4DC001B45F0 /* GHMSaleModel.h */,
 				2077A3FA1CB2B4DC001B45F0 /* GHMSaleModel.m */,
+				206174271CB378FD00F6D23F /* GHMMessageModel.h */,
+				206174281CB378FD00F6D23F /* GHMMessageModel.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -243,8 +253,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				206174241CB3719600F6D23F /* Images.xcassets in Resources */,
 				20F5E7821CB235E000DC6F63 /* LaunchScreen.storyboard in Resources */,
-				20F5E78A1CB2361700DC6F63 /* Images.xcassets in Resources */,
 				20F5E77D1CB235E000DC6F63 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +316,9 @@
 			files = (
 				2077A4091CB2E6B7001B45F0 /* GHMSalesViewController.m in Sources */,
 				2077A4061CB2E569001B45F0 /* GHMCellTableViewCell.m in Sources */,
+				206174291CB378FD00F6D23F /* GHMMessageModel.m in Sources */,
 				20F5E7901CB240C600DC6F63 /* GHMTabViewController.m in Sources */,
+				2061742C1CB379EE00F6D23F /* GHMMessageService.m in Sources */,
 				20F5E7771CB235E000DC6F63 /* AppDelegate.m in Sources */,
 				2077A3FB1CB2B4DC001B45F0 /* GHMSaleModel.m in Sources */,
 				2077A4021CB2C964001B45F0 /* GHMTabBar.m in Sources */,
@@ -425,7 +437,6 @@
 			baseConfigurationReference = B51A688D0B7A5296B91383ED /* Pods-gohotmart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = gohotmart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -439,7 +450,6 @@
 			baseConfigurationReference = 66CD0DC1E492146B7653396D /* Pods-gohotmart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = gohotmart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

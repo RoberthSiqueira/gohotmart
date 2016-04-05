@@ -8,7 +8,6 @@
 
 #import "GHMSaleService.h"
 #import "GHMJsonRequest.h"
-
 #import <Realm/Realm.h>
 
 @implementation GHMSaleService
