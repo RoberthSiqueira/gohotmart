@@ -11,6 +11,7 @@
 #import "GHMMessageCellCollectionViewCell.h"
 #import "GHMMessageService.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "UIViewController+AMSlideMenu.h"
 
 @interface GHMMessagesViewController () <UICollectionViewDataSource>
 @property (strong, nonatomic) RLMResults<GHMMessageModel *> *messages;
@@ -67,6 +68,12 @@
     return cell;
 
 }
+
+- (IBAction)openMenu:(UIButton *)sender {
+    AMSlideMenuMainViewController *mainVC = [self mainSlideMenu];
+    [mainVC openLeftMenu];
+}
+
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1F55CD94EECAB1A4A80DA6F7 /* libPods-gohotmart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9309D09711F6DEDEC5726D00 /* libPods-gohotmart.a */; };
 		202217CA1CB411B100AB4E9C /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 202217C91CB4116300AB4E9C /* fontawesome-webfont.ttf */; };
+		2043D5EC1CB41B9F00E7272A /* GHMMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2043D5EB1CB41B9F00E7272A /* GHMMenuViewController.m */; };
+		2043D5EF1CB41C8000E7272A /* GHMMenuControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2043D5EE1CB41C8000E7272A /* GHMMenuControlViewController.m */; };
 		206174241CB3719600F6D23F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 206174231CB3719600F6D23F /* Images.xcassets */; };
 		206174291CB378FD00F6D23F /* GHMMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 206174281CB378FD00F6D23F /* GHMMessageModel.m */; };
 		2061742C1CB379EE00F6D23F /* GHMMessageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2061742B1CB379EE00F6D23F /* GHMMessageService.m */; };
@@ -29,6 +31,10 @@
 
 /* Begin PBXFileReference section */
 		202217C91CB4116300AB4E9C /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		2043D5EA1CB41B9F00E7272A /* GHMMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMMenuViewController.h; sourceTree = "<group>"; };
+		2043D5EB1CB41B9F00E7272A /* GHMMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMMenuViewController.m; sourceTree = "<group>"; };
+		2043D5ED1CB41C8000E7272A /* GHMMenuControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMMenuControlViewController.h; sourceTree = "<group>"; };
+		2043D5EE1CB41C8000E7272A /* GHMMenuControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMMenuControlViewController.m; sourceTree = "<group>"; };
 		206174231CB3719600F6D23F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = gohotmart/Images.xcassets; sourceTree = "<group>"; };
 		206174271CB378FD00F6D23F /* GHMMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMMessageModel.h; sourceTree = "<group>"; };
 		206174281CB378FD00F6D23F /* GHMMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMMessageModel.m; sourceTree = "<group>"; };
@@ -92,6 +98,17 @@
 				202217C91CB4116300AB4E9C /* fontawesome-webfont.ttf */,
 			);
 			name = assets;
+			sourceTree = "<group>";
+		};
+		2043D5E91CB41B4600E7272A /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				2043D5EA1CB41B9F00E7272A /* GHMMenuViewController.h */,
+				2043D5EB1CB41B9F00E7272A /* GHMMenuViewController.m */,
+				2043D5ED1CB41C8000E7272A /* GHMMenuControlViewController.h */,
+				2043D5EE1CB41C8000E7272A /* GHMMenuControlViewController.m */,
+			);
+			name = menu;
 			sourceTree = "<group>";
 		};
 		207252F81CB2AF3700FA8685 /* service */ = {
@@ -175,6 +192,7 @@
 		20F5E78B1CB2406200DC6F63 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				2043D5E91CB41B4600E7272A /* menu */,
 				20F5E78E1CB240C600DC6F63 /* GHMTabViewController.h */,
 				20F5E78F1CB240C600DC6F63 /* GHMTabViewController.m */,
 				2077A4071CB2E6B7001B45F0 /* GHMSalesViewController.h */,
@@ -342,6 +360,7 @@
 				206174291CB378FD00F6D23F /* GHMMessageModel.m in Sources */,
 				20F5E7901CB240C600DC6F63 /* GHMTabViewController.m in Sources */,
 				2061742C1CB379EE00F6D23F /* GHMMessageService.m in Sources */,
+				2043D5EF1CB41C8000E7272A /* GHMMenuControlViewController.m in Sources */,
 				206174351CB3833200F6D23F /* GHMMessagesViewController.m in Sources */,
 				20F5E7771CB235E000DC6F63 /* AppDelegate.m in Sources */,
 				2077A3FB1CB2B4DC001B45F0 /* GHMSaleModel.m in Sources */,
@@ -349,6 +368,7 @@
 				2077A3FE1CB2BFA4001B45F0 /* GHMSaleService.m in Sources */,
 				2061742F1CB3817600F6D23F /* GHMMessageCellCollectionViewCell.m in Sources */,
 				207252FB1CB2AF8B00FA8685 /* GHMJsonRequest.m in Sources */,
+				2043D5EC1CB41B9F00E7272A /* GHMMenuViewController.m in Sources */,
 				20F5E7741CB235E000DC6F63 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

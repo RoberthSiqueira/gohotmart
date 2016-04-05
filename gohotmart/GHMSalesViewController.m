@@ -12,6 +12,7 @@
 #import "GHMSaleModel.h"
 #import "GHMSaleService.h"
 #import <Realm/Realm.h>
+#import "UIViewController+AMSlideMenu.h"
 
 @interface GHMSalesViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) RLMResults<GHMSaleModel *> *sales;
@@ -64,6 +65,11 @@
     cell.priceLabel.text = model.price;
     
     return cell;
+}
+
+- (IBAction)openMenu:(UIButton *)sender {
+    AMSlideMenuMainViewController *mainVC = [self mainSlideMenu];
+    [mainVC openLeftMenu];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
