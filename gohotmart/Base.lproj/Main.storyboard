@@ -489,9 +489,6 @@
                                                     <constraint firstAttribute="height" constant="60" id="Rwz-oV-cvB"/>
                                                     <constraint firstItem="d8r-bi-8R1" firstAttribute="leading" secondItem="Uqa-gL-ie6" secondAttribute="trailing" constant="28" id="jjh-f0-fsw"/>
                                                 </constraints>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="aPo-tb-Tvc" appends="YES" id="OWD-Mf-sOo"/>
-                                                </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2o-4c-rL4" userLabel="My Products View">
                                                 <rect key="frame" x="0.0" y="60" width="280" height="60"/>
@@ -587,9 +584,6 @@
                                                     <constraint firstAttribute="height" constant="60" id="x1B-kO-kWD"/>
                                                     <constraint firstAttribute="trailing" secondItem="zao-kh-H14" secondAttribute="trailing" constant="50" id="zbQ-zQ-aF0"/>
                                                 </constraints>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="oSm-a7-Ef9" appends="YES" id="v4J-98-lj6"/>
-                                                </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOb-Nc-ILQ" userLabel="Notifications View">
                                                 <rect key="frame" x="0.0" y="240" width="280" height="60"/>
@@ -626,9 +620,6 @@
                                                     <constraint firstItem="XUy-xZ-tXc" firstAttribute="leading" secondItem="PT7-7x-KJ6" secondAttribute="trailing" constant="28" id="pJk-49-jjH"/>
                                                     <constraint firstItem="Hbu-v1-g4N" firstAttribute="top" secondItem="XOb-Nc-ILQ" secondAttribute="top" constant="27" id="v1c-80-AM1"/>
                                                 </constraints>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="jm5-6e-alQ" appends="YES" id="bDn-2g-UKk"/>
-                                                </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="trl-rS-0TT" userLabel="My Account View">
                                                 <rect key="frame" x="0.0" y="300" width="280" height="60"/>
@@ -715,41 +706,48 @@
                                     <constraint firstItem="a0D-a5-Zo8" firstAttribute="top" secondItem="xWx-OH-YtI" secondAttribute="top" constant="178" id="jfz-Dt-T6t"/>
                                 </constraints>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTN-3K-5bv" userLabel="Blur View">
+                                <rect key="frame" x="0.0" y="-20" width="280" height="178"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2HG-fl-qc6" userLabel="Background Image">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="178"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2HG-fl-qc6" firstAttribute="leading" secondItem="YTN-3K-5bv" secondAttribute="leading" id="Ehh-cJ-rOa"/>
+                                    <constraint firstAttribute="bottom" secondItem="2HG-fl-qc6" secondAttribute="bottom" id="WVL-zD-j6P"/>
+                                    <constraint firstAttribute="trailing" secondItem="2HG-fl-qc6" secondAttribute="trailing" id="Ylu-vX-hhG"/>
+                                    <constraint firstAttribute="height" constant="178" id="lrO-g3-4vH"/>
+                                    <constraint firstItem="2HG-fl-qc6" firstAttribute="top" secondItem="YTN-3K-5bv" secondAttribute="top" id="uYt-fl-E5j"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0L-q5-6OA" userLabel="User View">
                                 <rect key="frame" x="0.0" y="0.0" width="280" height="178"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="2HG-fl-qc6">
-                                        <rect key="frame" x="0.0" y="-25" width="280" height="203"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="IR7-as-bwK">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="IR7-as-bwK" userLabel="Photo Image">
                                         <rect key="frame" x="20" y="20" width="85" height="85"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="85" id="afi-nJ-68h"/>
                                             <constraint firstAttribute="height" constant="85" id="dme-UG-Z51"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROBERTH SIQUEIRA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSs-Re-Ap9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROBERTH SIQUEIRA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSs-Re-Ap9" userLabel="Name Label">
                                         <rect key="frame" x="20" y="120" width="150" height="18"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="roberth.siqueira@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8i-Sk-Ef8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="roberth.siqueira@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8i-Sk-Ef8" userLabel="E-mail Label">
                                         <rect key="frame" x="20" y="141" width="188" height="18"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                         <color key="textColor" red="0.81568627450980391" green="0.30980392156862746" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="2HG-fl-qc6" secondAttribute="trailing" id="0wv-tU-3jf"/>
                                     <constraint firstItem="IR7-as-bwK" firstAttribute="top" secondItem="L0L-q5-6OA" secondAttribute="top" constant="20" id="L5f-GW-Ygu"/>
                                     <constraint firstItem="KSs-Re-Ap9" firstAttribute="leading" secondItem="L0L-q5-6OA" secondAttribute="leading" constant="20" id="LY4-hJ-t8U"/>
                                     <constraint firstItem="M8i-Sk-Ef8" firstAttribute="leading" secondItem="L0L-q5-6OA" secondAttribute="leading" constant="20" id="Ln5-Zb-Gdb"/>
-                                    <constraint firstItem="2HG-fl-qc6" firstAttribute="leading" secondItem="L0L-q5-6OA" secondAttribute="leading" id="RBn-lq-Yqu"/>
-                                    <constraint firstItem="2HG-fl-qc6" firstAttribute="top" secondItem="L0L-q5-6OA" secondAttribute="top" constant="-25" id="TrM-P8-ntH"/>
-                                    <constraint firstAttribute="bottom" secondItem="2HG-fl-qc6" secondAttribute="bottom" id="Wjp-VD-SY0"/>
                                     <constraint firstItem="M8i-Sk-Ef8" firstAttribute="top" secondItem="KSs-Re-Ap9" secondAttribute="bottom" constant="3" id="iZa-dh-FI8"/>
                                     <constraint firstAttribute="height" constant="178" id="m21-SM-IIE"/>
                                     <constraint firstItem="KSs-Re-Ap9" firstAttribute="top" secondItem="IR7-as-bwK" secondAttribute="bottom" constant="15" id="nTl-Tt-Rgp"/>
@@ -759,8 +757,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="YTN-3K-5bv" firstAttribute="top" secondItem="qua-GA-MHb" secondAttribute="bottom" constant="-20" id="0I8-0U-XEe"/>
                             <constraint firstItem="xWx-OH-YtI" firstAttribute="top" secondItem="MLF-iv-7bI" secondAttribute="top" id="42P-DF-mpC"/>
+                            <constraint firstAttribute="trailing" secondItem="YTN-3K-5bv" secondAttribute="trailing" id="7NS-pH-u3l"/>
                             <constraint firstItem="xWx-OH-YtI" firstAttribute="leading" secondItem="MLF-iv-7bI" secondAttribute="leading" id="CPM-ds-Mx8"/>
+                            <constraint firstItem="YTN-3K-5bv" firstAttribute="leading" secondItem="MLF-iv-7bI" secondAttribute="leading" id="GpI-iW-Xr1"/>
                             <constraint firstItem="L0L-q5-6OA" firstAttribute="top" secondItem="MLF-iv-7bI" secondAttribute="top" id="ZTT-4B-GVb"/>
                             <constraint firstAttribute="trailing" secondItem="xWx-OH-YtI" secondAttribute="trailing" id="p37-WL-nyP"/>
                             <constraint firstItem="GAJ-LG-ryQ" firstAttribute="top" secondItem="xWx-OH-YtI" secondAttribute="bottom" id="qtp-uM-uRd"/>
@@ -774,17 +775,16 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="280" height="600"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="2HG-fl-qc6" id="CkE-oC-cTY"/>
+                        <outlet property="blurView" destination="YTN-3K-5bv" id="ylm-vM-k1H"/>
+                        <outlet property="emailLabel" destination="M8i-Sk-Ef8" id="Sa7-zV-Shk"/>
+                        <outlet property="nameLabel" destination="KSs-Re-Ap9" id="XBo-A8-3kB"/>
+                        <outlet property="photoImage" destination="IR7-as-bwK" id="sMQ-3X-GQV"/>
+                        <outlet property="userView" destination="L0L-q5-6OA" id="WTM-Al-ktd"/>
                         <segue destination="o25-kQ-6y0" kind="custom" identifier="menuForHome" customClass="AMSlideMenuContentSegue" id="0er-Lw-goe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfG-qb-SdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="aPo-tb-Tvc" userLabel="Sales">
-                    <connections>
-                        <action selector="openSales:" destination="jOc-hU-dLV" id="5s3-Gr-avY"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="oSm-a7-Ef9" userLabel="Messages"/>
-                <tapGestureRecognizer id="jm5-6e-alQ" userLabel="Notifications"/>
             </objects>
             <point key="canvasLocation" x="25" y="-201"/>
         </scene>
@@ -858,7 +858,7 @@
         <image name="ico_mensagem_2" width="59" height="59"/>
         <image name="ico_meus_produtos" width="59" height="59"/>
         <image name="ico_minha_conta" width="59" height="59"/>
-        <image name="ico_minhas_vendas" width="37" height="37"/>
+        <image name="ico_minhas_vendas" width="56" height="56"/>
         <image name="ico_minhas_vendas_2" width="59" height="59"/>
         <image name="ico_notificacoes" width="56" height="56"/>
         <image name="ico_notificacoes_2" width="89" height="89"/>
