@@ -25,17 +25,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self refreshMessages];
+}
+
+- (void) refreshMessages {
     [self.loadingView setHidden:NO];
     [GHMMessageService syncMessage];
-    
     _token = [[GHMMessageModel allObjects] addNotificationBlock:^(RLMResults<GHMMessageModel *> *results, NSError * _Nullable error) {
         self.messages = results;
-        [self.loadingView setHidden:YES];
         self.numMsgLabel.text = [NSString stringWithFormat:@"+%ld", (long)self.messages.count];
+        [self.loadingView setHidden:YES];
         [self.messagesCollectionView reloadData];
     }];
-    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -74,20 +75,5 @@
     AMSlideMenuMainViewController *mainVC = [self mainSlideMenu];
     [mainVC openLeftMenu];
 }
-
-
-- (UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

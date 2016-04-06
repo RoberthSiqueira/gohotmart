@@ -25,6 +25,7 @@
 @property (strong, nonatomic) IBOutlet UICollectionView *messagesCollectionView;
 @property (strong, nonatomic) RLMResults<GHMSaleModel *> *sales;
 @property (strong, nonatomic) IBOutlet UITableView *salesTableView;
+@property (strong, nonatomic) IBOutlet UIView *loadingView;
 @property (strong, nonatomic) RLMNotificationToken *tokenMessages;
 @property (strong, nonatomic) RLMNotificationToken *tokenSales;
 
@@ -34,22 +35,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self refreshMessages];
+    [self refreshSales];
+}
+
+- (void) refreshMessages {
+    [self.loadingView setHidden:NO];
     [GHMMessageService syncMessage];
-    
     _tokenMessages = [[GHMMessageModel allObjects] addNotificationBlock:^(RLMResults<GHMMessageModel *> *results, NSError * _Nullable error) {
         self.messages = results;
         self.numMsgLabel.text = [NSString stringWithFormat:@"+%ld", (long)self.messages.count];
+        [self.loadingView setHidden:YES];
         [self.messagesCollectionView reloadData];
     }];
-    
+}
+
+- (void) refreshSales {
+    [self.loadingView setHidden:NO];
     [GHMSaleService syncSale];
-    
     _tokenSales = [[GHMSaleModel allObjects] addNotificationBlock:^(RLMResults<GHMSaleModel *> *results, NSError * _Nullable error) {
         self.sales = results;
+        [self.loadingView setHidden:YES];
         [self.salesTableView reloadData];
     }];
-
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -99,7 +107,6 @@
     
     return cell;
 }
-
 
 - (IBAction)openMenu:(UIButton *)sender {
     AMSlideMenuMainViewController *mainVC = [self mainSlideMenu];

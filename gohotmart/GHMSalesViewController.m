@@ -25,17 +25,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self refreshSales];
+}
 
+- (void) refreshSales {
     [self.loadingView setHidden:NO];
-    
     [GHMSaleService syncSale];
-    
     _token = [[GHMSaleModel allObjects] addNotificationBlock:^(RLMResults<GHMSaleModel *> *results, NSError * _Nullable error) {
         self.sales = results;
         [self.loadingView setHidden:YES];
         [self.salesTableView reloadData];
     }];
-    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -74,15 +74,5 @@
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

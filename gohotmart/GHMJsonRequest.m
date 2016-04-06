@@ -10,7 +10,6 @@
 #import <AFNetworking/AFNetworking.h>
 
 @implementation GHMJsonRequest
-
 + (void)request:(NSString *)url complete:(CompleteBlock)completeBlock {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:url parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
