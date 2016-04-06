@@ -22,6 +22,7 @@
 		2077A4021CB2C964001B45F0 /* GHMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A4011CB2C964001B45F0 /* GHMTabBar.m */; };
 		2077A4061CB2E569001B45F0 /* GHMSaleCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A4051CB2E569001B45F0 /* GHMSaleCellTableViewCell.m */; };
 		2077A4091CB2E6B7001B45F0 /* GHMSalesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077A4081CB2E6B7001B45F0 /* GHMSalesViewController.m */; };
+		208425391CB558E5000185C6 /* GHMNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 208425381CB558E5000185C6 /* GHMNotificationsViewController.m */; };
 		2090040A1CB4842D00EA9DAE /* GHMUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 209004091CB4842D00EA9DAE /* GHMUserModel.m */; };
 		2090040D1CB4854F00EA9DAE /* GHMUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2090040C1CB4854F00EA9DAE /* GHMUserService.m */; };
 		20F5E7741CB235E000DC6F63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5E7731CB235E000DC6F63 /* main.m */; };
@@ -58,6 +59,8 @@
 		2077A4051CB2E569001B45F0 /* GHMSaleCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMSaleCellTableViewCell.m; sourceTree = "<group>"; };
 		2077A4071CB2E6B7001B45F0 /* GHMSalesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMSalesViewController.h; sourceTree = "<group>"; };
 		2077A4081CB2E6B7001B45F0 /* GHMSalesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMSalesViewController.m; sourceTree = "<group>"; };
+		208425371CB558E5000185C6 /* GHMNotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMNotificationsViewController.h; sourceTree = "<group>"; };
+		208425381CB558E5000185C6 /* GHMNotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMNotificationsViewController.m; sourceTree = "<group>"; };
 		209004081CB4842D00EA9DAE /* GHMUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMUserModel.h; sourceTree = "<group>"; };
 		209004091CB4842D00EA9DAE /* GHMUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHMUserModel.m; sourceTree = "<group>"; };
 		2090040B1CB4854F00EA9DAE /* GHMUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHMUserService.h; sourceTree = "<group>"; };
@@ -207,6 +210,8 @@
 				2077A4081CB2E6B7001B45F0 /* GHMSalesViewController.m */,
 				206174331CB3833200F6D23F /* GHMMessagesViewController.h */,
 				206174341CB3833200F6D23F /* GHMMessagesViewController.m */,
+				208425371CB558E5000185C6 /* GHMNotificationsViewController.h */,
+				208425381CB558E5000185C6 /* GHMNotificationsViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -371,6 +376,7 @@
 				20F5E7901CB240C600DC6F63 /* GHMTabViewController.m in Sources */,
 				2061742C1CB379EE00F6D23F /* GHMMessageService.m in Sources */,
 				2090040A1CB4842D00EA9DAE /* GHMUserModel.m in Sources */,
+				208425391CB558E5000185C6 /* GHMNotificationsViewController.m in Sources */,
 				2043D5EF1CB41C8000E7272A /* GHMMenuControlViewController.m in Sources */,
 				206174351CB3833200F6D23F /* GHMMessagesViewController.m in Sources */,
 				20F5E7771CB235E000DC6F63 /* AppDelegate.m in Sources */,

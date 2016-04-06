@@ -53,6 +53,7 @@
         [self.photoImage sd_setImageWithURL:photoUrl];
         [self.backgroundImage sd_setImageWithURL:photoUrl];
         self.photoImage.layer.cornerRadius = self.photoImage.frame.size.width / 2;
+        self.photoImage.clipsToBounds = YES;
         UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
         UIVisualEffectView *blurEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
         blurEffectView.frame = self.blurView.frame;

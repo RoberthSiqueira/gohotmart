@@ -62,7 +62,8 @@
         cell.alertImage.image = [UIImage imageNamed:@"ico_alert.png"];
     }
     [cell.photoImage sd_setImageWithURL:photoUrl];
-    cell.photoImage.layer.cornerRadius = cell.photoImage.frame.size.width /2;
+    cell.photoImage.layer.cornerRadius = cell.photoImage.frame.size.width / 2;
+    cell.photoImage.clipsToBounds = YES;
     cell.nameLabel.text = model.name;
     
     return cell;

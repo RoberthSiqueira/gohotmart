@@ -10,7 +10,6 @@
 #import "GHMSaleCellTableViewCell.h"
 #import "GHMSaleService.h"
 #import "GHMSaleModel.h"
-#import "GHMSaleService.h"
 #import <Realm/Realm.h>
 #import "UIViewController+AMSlideMenu.h"
 
