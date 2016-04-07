@@ -16,6 +16,12 @@
         completeBlock(nil, responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         completeBlock(error, nil);
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Erro de conexão"
+                                                        message:@"Verifique sua conexão e tente novamente."
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
     }];
 }
 

@@ -93,9 +93,9 @@
     GHMSaleCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SaleCell"];
     
     if (indexPath.row % 2 == 0) {
-        [cell setBackgroundColor:[UIColor whiteColor]];
-    } else {
         [cell setBackgroundColor:[UIColor colorWithRed:244/255.0f green:244/255.0f blue:244/255.0f alpha:1.0f]];
+    } else {
+        [cell setBackgroundColor:[UIColor whiteColor]];
     }
     
     GHMSaleModel *model = self.sales[indexPath.row];
