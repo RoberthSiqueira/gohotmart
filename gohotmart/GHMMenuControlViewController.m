@@ -31,6 +31,7 @@
 
 - (void) refreshInfoUser {
         self.nameLabel.text = @"Roberth Siqueira";
+        self.nameLabel.text = [self.nameLabel.text uppercaseString];
         self.emailLabel.text = @"roberth.siqueira@gmail.com";
         NSURL *photoUrl = [[NSURL alloc]init];
         photoUrl = [NSURL URLWithString:@"https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAStAAAAJDQ3ZDEzN2VjLTA5YjctNGNmMy05NWVkLTgyMjdlMzA5Mjg0MQ.jpg"];

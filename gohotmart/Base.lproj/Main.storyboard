@@ -1011,7 +1011,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="280" height="178"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="IR7-as-bwK" userLabel="Photo Image">
-                                        <rect key="frame" x="20" y="20" width="85" height="85"/>
+                                        <rect key="frame" x="20" y="30" width="85" height="85"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="85" id="afi-nJ-68h"/>
                                             <constraint firstAttribute="height" constant="85" id="dme-UG-Z51"/>
@@ -1031,12 +1031,12 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="IR7-as-bwK" firstAttribute="top" secondItem="L0L-q5-6OA" secondAttribute="top" constant="20" id="L5f-GW-Ygu"/>
+                                    <constraint firstItem="IR7-as-bwK" firstAttribute="top" secondItem="L0L-q5-6OA" secondAttribute="top" constant="30" id="L5f-GW-Ygu"/>
                                     <constraint firstItem="KSs-Re-Ap9" firstAttribute="leading" secondItem="L0L-q5-6OA" secondAttribute="leading" constant="20" id="LY4-hJ-t8U"/>
                                     <constraint firstItem="M8i-Sk-Ef8" firstAttribute="leading" secondItem="L0L-q5-6OA" secondAttribute="leading" constant="20" id="Ln5-Zb-Gdb"/>
                                     <constraint firstItem="M8i-Sk-Ef8" firstAttribute="top" secondItem="KSs-Re-Ap9" secondAttribute="bottom" constant="3" id="iZa-dh-FI8"/>
                                     <constraint firstAttribute="height" constant="178" id="m21-SM-IIE"/>
-                                    <constraint firstItem="KSs-Re-Ap9" firstAttribute="top" secondItem="IR7-as-bwK" secondAttribute="bottom" constant="15" id="nTl-Tt-Rgp"/>
+                                    <constraint firstItem="KSs-Re-Ap9" firstAttribute="top" secondItem="IR7-as-bwK" secondAttribute="bottom" constant="5" id="nTl-Tt-Rgp"/>
                                     <constraint firstItem="IR7-as-bwK" firstAttribute="leading" secondItem="L0L-q5-6OA" secondAttribute="leading" constant="20" id="yYQ-W7-TsT"/>
                                 </constraints>
                             </view>
