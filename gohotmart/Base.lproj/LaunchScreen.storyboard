@@ -10,23 +10,21 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
-                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                        <viewControllerLayoutGuide type="top" id="QpY-Bo-20g"/>
+                        <viewControllerLayoutGuide type="bottom" id="fXv-2G-IqO"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="oeS-h6-fFd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="ChF-3f-EE6">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finance" translatesAutoresizingMaskIntoConstraints="NO" id="pc7-Rk-fi1">
+                                <rect key="frame" x="251" y="251" width="99" height="99"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ChF-3f-EE6" secondAttribute="bottom" id="KZu-LH-Hp3"/>
-                            <constraint firstItem="ChF-3f-EE6" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="QKx-It-Fdf"/>
-                            <constraint firstAttribute="trailing" secondItem="ChF-3f-EE6" secondAttribute="trailing" id="e42-4Z-Bkk"/>
-                            <constraint firstItem="ChF-3f-EE6" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="iyw-ym-aXF"/>
+                            <constraint firstItem="pc7-Rk-fi1" firstAttribute="centerY" secondItem="oeS-h6-fFd" secondAttribute="centerY" id="Jik-Cf-gHO"/>
+                            <constraint firstItem="pc7-Rk-fi1" firstAttribute="centerX" secondItem="oeS-h6-fFd" secondAttribute="centerX" id="yWd-Gw-hX3"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -36,6 +34,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splash" width="2048" height="2048"/>
+        <image name="finance" width="99" height="99"/>
     </resources>
 </document>

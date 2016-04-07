@@ -7,6 +7,7 @@
 //
 
 #import "GHMMenuControlViewController.h"
+#import "GHMTabViewController.h"
 #import "UIViewController+AMSlideMenu.h"
 #import "AMSlideMenuMainViewController.h"
 #import "AMSlideMenuContentSegue.h"
@@ -45,6 +46,18 @@
         blurEffectView.frame = self.backgroundImage.frame;
         blurEffectView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [self.blurView addSubview:blurEffectView];
+}
+
+- (IBAction)openSales:(UITapGestureRecognizer *)sender {
+    [self performSegueWithIdentifier:@"menuForHome" sender:self];
+}
+
+- (IBAction)openMessages:(UITapGestureRecognizer *)sender {
+    [self performSegueWithIdentifier:@"menuForHome" sender:self];
+}
+
+- (IBAction)openNotifications:(UITapGestureRecognizer *)sender {
+    [self performSegueWithIdentifier:@"menuForHome" sender:self];
 }
 
 - (void)openContentNavigationController:(UINavigationController *)nvc
